@@ -16,7 +16,7 @@ int main(){
     char x,y;
     printf("Enter an expression:");
     scanf("%d %c %d %c %d",&a,&x,&b,&y,&c);
-    if(a>1000||b>1000||c>1000){
+    if(a>1000||b>1000||c>1000||x!='*'||x!='/'||x!='+'||x!='-'||y!='/'||y!='*'||y!='+'||y!='-'){
         printf("Incorrect input: numbers cannot exceed 1000. Program terminated, please try again.");
         return 0;
     }
