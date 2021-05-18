@@ -29,14 +29,14 @@ int main(){
         else if(y=='-')printf("%d",subs(a,c));
         return 0;
     }
-    if(y=='/'){
+    else if(y=='/'){
         c=div(b,c);
         if(x=='*')printf("%d",multiply(a,c));
         else if(x=='+')printf("%d",add(a,c));
         else if(x=='-')printf("%d",subs(a,c));
         return 0;
     }
-    if(x=='*'){
+    else if(x=='*'){
         a=multiply(a,b);
         if(y=='*')printf("%d",multiply(a,c));
         else if(y=='+')printf("%d",add(a,c));
@@ -44,15 +44,15 @@ int main(){
         return 0;
     }
     
-    if(y=='*'){
+    else if(y=='*'){
         c=multiply(b,c);
         if(x=='+')printf("%d",add(a,c));
         else if(x=='-')printf("%d",subs(a,c));
         return 0;
     }
-    if(x=='+'&&y=='+')printf("%d",add(a,add(b,c)));
-    if(x=='+'&&y=='-')printf("%d",add(a,subs(b,c)));
-    if(x=='-'&&y=='+')printf("%d",subs(a,add(b,c)));
-    if(x=='-'&&y=='-')printf("%d",subs(a,subs(b,c)));
+    else if(x=='+'&&y=='+')printf("%d",add(a,add(b,c)));
+    else if(x=='+'&&y=='-')printf("%d",add(a,subs(b,c)));
+    else if(x=='-'&&y=='+')printf("%d",add(subs(a,b),c));
+    else if(x=='-'&&y=='-')printf("%d",subs(subs(a,b),c));
     return 0;
 }
