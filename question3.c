@@ -20,6 +20,14 @@ int main(){
         printf("Incorrect input: numbers cannot exceed 1000. Program terminated, please try again.");
         return 0;
     }
+    if(x!='/'&&x!='*'&&x!='+'&&x!='-'){
+        printf("Incorrect input: Program terminated, please try again.");
+        return 0;
+    }
+    if(y!='/'&&y!='*'&&y!='+'&&y!='-'){
+        printf("Incorrect input: Program terminated, please try again.");
+        return 0;
+    }
     printf("Result: ");
     if(x=='/'){
         a=div(a,b);
