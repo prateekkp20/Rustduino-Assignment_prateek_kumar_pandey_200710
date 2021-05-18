@@ -1,3 +1,6 @@
+// Write a C/C++ program that performs the following actions:
+
+// Prompts the user to input their name. Prints a greeting to the user, calling them by their name. Prompts the user to input the year they were born. Calculates and prints the user's age.
 #include<stdio.h>
 int main(){
     char name[100];
